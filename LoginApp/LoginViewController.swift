@@ -18,12 +18,6 @@ final class LoginViewController: UIViewController {
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let settingWelcomeVC = segue.destination as? WelcomeViewController else { return }
-//        let settingTabBarController = segue.destination as! UITabBarController
-//        let navigationVC = settingTabBarController.viewControllers?.last as! UINavigationController
-//        let aboutUserVC = navigationVC.topViewController as! AboutViewController
-//        settingWelcomeVC.user = user
-//        aboutUserVC.user = user
         let tabBarController = segue.destination as! UITabBarController
         let welcomeVC = tabBarController.viewControllers?.first as! WelcomeViewController
         let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
